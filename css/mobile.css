@@ -1,0 +1,31 @@
+/* Mobile */
+@media (max-width: 767px) {
+  .navbar-nav {
+    width: 100%;
+  }
+  .nav-item {
+    border: none !important;
+    height: 2em;
+  }
+  .sec--3 .grid,
+  .project .grid,
+  .certificates .grid {
+    display: block;
+  }
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  .certificates img {
+    width: 75%;
+    padding-bottom: 1em;
+  }
+  .certificates .cert:first-child {
+    border-right: none;
+    border-bottom: 1px solid #d6c08d;
+  }
+
+  .certificates .cert {
+    padding-top: 1rem;
+  }
+}

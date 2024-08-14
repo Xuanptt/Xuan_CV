@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: calibri;
+  font-size: small;
+}
+p {
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+  color: darkgray;
+}
+
+i {
+  color: #1da1f2;
+  size: 1rem;
+  padding-right: 3px;
+}
+
+.card {
+  border-radius: 0;
+}
+
+/* HEADER BANNER */
+.name {
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* NAVIGATION BAR */
+.nav-item {
+  height: 45px;
+  align-content: center;
+}
+
+/* MỤC TIÊU - THÔNG TIN CÁ NHÂN */
+#infor-details {
+  display: none;
+}
+
+/* KHỐI KINH NGHIỆM - KỸ NĂNG - HỌC VẤN - HOẠT ĐỘNG - SỞ THÍCH - NGÔN NGỮ  */
+
+.sec--3 .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  /* margin: 30px 20%; */
+}
+
+.title i {
+  color: #333;
+}
+
+.content li {
+  padding-bottom: 2rem;
+}
+
+/* btn  hiện tại */
+.btn1 {
+  background-color: #1da1f2;
+  border: none;
+  color: white;
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
+  border-radius: 0.25rem;
+}
+
+/* chấm tròn xanh có viền */
+.content ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.content li::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: #1da1f2;
+  border: 1px solid #e7e7e7;
+  margin: 5px -30px;
+  border-radius: 50%;
+  padding-left: -30px;
+}
+/* Ẩn content and View More button */
+.content {
+  display: none;
+}
+
+/* .viewmore-btn {
+  display: none;
+} */
+
+/* HOBBIES */
+/* bo tròn quanh icon */
+.hob-content i {
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #1da1f2;
+  border-radius: 50%;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* LANGUAGE - SKILL */
+
+.dash div {
+  margin-top: 0.5rem;
+  border-bottom: solid #1da1f2;
+}
+
+/* CHỨNG CHỈ - GIẢI THƯỞNG */
+
+.certificates .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1.5rem;
+}
+
+.certificates img {
+  width: 200px;
+  margin-right: 1em;
+}
+
+.certificates .cert:first-child {
+  border-right: 1px solid #d6c08d;
+  border-bottom: 1px solid #d6c08d;
+}
+
+.certificates .cert {
+  border-bottom: 1px solid #d6c08d;
+}
+.cert:last-child {
+  border: none;
+}
+
+/* DỰ ÁN */
+
+.project .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.project-info {
+  text-align: left;
+}
+
+.btn2 {
+  background-color: #1da1f2;
+  border: none;
+  color: white;
+  width: 3rem;
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
+  border-radius: 0.5rem;
+}
+
+.details {
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid lightgray;
+}
+
+.left {
+  float: left;
+  padding: 0.35rem 0 0.5rem 0.5rem;
+  width: 25%;
+}
+
+.right {
+  float: right;
+  width: 75%;
+  padding: 0.35rem 0;
+  height: auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Bổ sung hiệu ứng cho link */
+/* unvisited link */
+.project a:link {
+  color: #1da1f2;
+}
+
+/* visited link */
+.project a:visited {
+  color: grey;
+}
+
+/* mouse over link */
+.project a:hover {
+  color: #1da1f2;
+}
+
+/* selected link */
+.project a:active {
+  color: red;
+}
+/* Contact */
+
+/* footer i {
+  font-size: 2rem !important;
+} */
+/* footer div {
+  padding: 20px 20px;
+} */
