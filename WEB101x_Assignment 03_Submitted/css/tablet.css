@@ -1,0 +1,8 @@
+/* Tablets and under */
+@media (min-width: 768px) and (max-width: 991px) {
+  .sec--3 .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+}
