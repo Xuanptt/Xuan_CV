@@ -31,6 +31,7 @@ emailBtn.addEventListener("click", function (event) {
   } else {
     emailLabel.textContent =
       "Sai định dạng email: abc@funix.edu.vn Hãy nhập lại";
+    emailLabel.style.color = "red";
   }
 });
 
@@ -77,8 +78,8 @@ cards.forEach(function (card) {
     }
   });
 
-  // Ẩn View More button, giữ content khi di chuột ra chỗ khác
-  ccard.addEventListener("mouseleave", function () {
+  // Ẩn View More button, vẫn hiện content, view less thì ẩn hết khi di chuột ra chỗ khác
+  card.addEventListener("mouseleave", function () {
     if (contentDiv.style.display === "block") {
       viewMoreBtn.style.display = "none";
     } else if (viewMoreBtn.textContent === "VIEW MORE") {
