@@ -77,13 +77,15 @@ cards.forEach(function (card) {
     }
   });
 
-  // Ẩn View More button, content khi di chuột ra chỗ khác
-  card.addEventListener("mouseleave", function () {
+  // Ẩn View More button, giữ content khi di chuột ra chỗ khác
+  ccard.addEventListener("mouseleave", function () {
     if (contentDiv.style.display === "block") {
+      viewMoreBtn.style.display = "none";
+    } else if (viewMoreBtn.textContent === "VIEW MORE") {
+      contentDiv.style.display = "none";
       viewMoreBtn.style.display = "none";
     } else {
       contentDiv.style.display = "block";
-      viewMoreBtn.style.display = "none";
     }
   });
 });
