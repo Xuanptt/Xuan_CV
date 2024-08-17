@@ -79,7 +79,11 @@ cards.forEach(function (card) {
 
   // Ẩn View More button, content khi di chuột ra chỗ khác
   card.addEventListener("mouseleave", function () {
-    viewMoreBtn.style.display = "none";
-    contentDiv.style.display = "none";
+    if (contentDiv.style.display === "block") {
+      viewMoreBtn.style.display = "none";
+    } else {
+      contentDiv.style.display = "block";
+      viewMoreBtn.style.display = "none";
+    }
   });
 });
